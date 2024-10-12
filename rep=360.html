@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>Documents à télécharger - Mathématiques</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <link rel="stylesheet" href="ac1.css">
+  <link rel="stylesheet" href="ac2.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/commun.min.js?v=1100"></script>
+  <link rel="alternate" type="application/rss+xml" title="Flux RSS" href="rss/6c4b791ea24f4be7c501/rss.xml">
+</head>
+<body data-csrf-token="084953acc0d60d0b0560f9149dc9f8ee1ec928e69a24e55f80c5498512f82f82">
+
+<header><h1>Documents à télécharger - Mathématiques</h1></header>
+
+<nav>
+  <div id="iconesmenu">
+    <a class="icon-menu" title="Afficher le menu"></a>
+    <a class="icon-accueil" href="." title="Revenir à la page d'accueil"></a>
+    <a class="icon-recent" href="recent" title="Voir les 0 nouveaux contenus">0</a>
+    <a class="icon-rep" id="actuel2" href="docs" title="Voir les documents à télécharger"></a>
+    <a class="icon-agenda" href="agenda" title="Voir l'agenda"></a>
+    <a class="icon-mail" href="mail" title="Envoyer un mail"></a>
+    <a class="icon-deconnexion" title="Se déconnecter"></a>
+  </div>
+  <div id="menu">
+    <hr>
+    <a href="avantPC.html">Avant la PC</a>
+    <a href="bo.html">BO</a>
+    <a href="CultureG.html">Culture générale</a>
+    <a href="concours.html">Concours</a>
+    <a href="Apres.html">Après les oraux</a>
+    <a href="orientation.html">Orientation</a>
+    <a href="sciencefemmes.html">Sciences au féminin</a>
+    <a href="handi.html">CPGE et handicap</a>
+    <a href="bourses.html">Bourses</a>
+    <a href="C:\Users\lempe\OneDrive\Documents\html\PC\documents generaux\docs.html"><span class="icon-rep"></span>&nbsp;Documents généraux</a>
+    <h3>Chimie</h3>
+   
+    
+    <a href="chimie.html"><span class="icon-rep"></span>&nbsp;Documents à télécharger</a>
+    <h3>Physique</h3>
+   
+    <a href="simulation.html">Illustrations de cours</a>
+    
+    <a href="phys.html"><span class="icon-rep"></span>&nbsp;Documents à télécharger</a>
+    <a class="menurep" href="rep=274.html">CN</a>
+    <a class="menurep" href="rep=258.html">Cours</a>
+    <a class="menurep" href="rep=13.html">Divers</a>
+    <a class="menurep" href="rep=206.html">DM</a>
+    <a class="menurep" href="rep=214.html">DS</a>
+    <a class="menurep" href="rep=241.html">Préparation à l'oral</a>
+    <a class="menurep" href="rep=236.html">Préparation aux écrits</a>
+    <a class="menurep" href="rep=203.html">TD</a>
+    <a class="menurep" href="rep=204.html">TP</a>
+    <h3>Mathématiques</h3>
+    <a href="mathématiques.html"><span class="icon-rep"></span>&nbsp;Documents à télécharger</a>
+  </div>
+</nav>
+
+<section>
+
+  <p id="parentsdoc" class="topbarre">
+    <a class="icon-chronodesc ordre " title="Classer les documents par ordre chronologique inversé"></a>
+    <a class="icon-chronoasc ordre " title="Classer les documents par ordre chronologique"></a>
+    <a class="icon-alphadesc ordre " title="Classer les documents par ordre alphabétique inversé"></a>
+    <a class="icon-alphaasc ordre actuel" title="Classer les documents par ordre alphabétique"></a>
+    <a href="docs.html" title="Revenir à l'accueil des documents"><span class="icon-rep-open"></span></a><span class="nom"><a href="mathématiques.html">Mathématiques</a>&nbsp;/&nbsp;<a href="rep=360.html">fiches centrale python</a></span>
+  </p>
+
+  <p class="doc"><span class="docdonnees">(pdf, 01/04/2024, 84&nbsp;ko)</span> <a href="C:\Users\lempe\OneDrive\Documents\html\Math\fichecentrale\Python-AN.pdf"><span class="icon-doc-pdf"></span><span class="nom">Python-AN</span></a></p>
+
+  <p class="doc"><span class="docdonnees">(pdf, 01/04/2024, 60&nbsp;ko)</span> <a href="C:\Users\lempe\OneDrive\Documents\html\Math\fichecentrale\Python-matrices.pdf"><span class="icon-doc-pdf"></span><span class="nom">Python-matrices</span></a></p>
+
+  <p class="doc"><span class="docdonnees">(pdf, 01/04/2024, 178&nbsp;ko)</span> <a href="C:\Users\lempe\OneDrive\Documents\html\Math\fichecentrale\Python-plot.pdf"><span class="icon-doc-pdf"></span><span class="nom">Python-plot</span></a></p>
+
+  <p class="doc"><span class="docdonnees">(pdf, 01/04/2024, 44&nbsp;ko)</span> <a href="C:\Users\lempe\OneDrive\Documents\html\Math\fichecentrale\Python-polynomes.pdf"><span class="icon-doc-pdf"></span><span class="nom">Python-polynomes</span></a></p>
+
+  <p class="doc"><span class="docdonnees">(pdf, 01/04/2024, 41&nbsp;ko)</span> <a href="C:\Users\lempe\OneDrive\Documents\html\Math\fichecentrale\Python-random.pdf"><span class="icon-doc-pdf"></span><span class="nom">Python-random</span></a></p>
+  <script type="text/javascript">
+$( function() {
+  $('a.ordre').on("click",function() {
+    var h = window.location.href;
+    var i = h.indexOf('ordre=');
+    if ( $(this).hasClass('icon-alphaasc') )  {
+      if ( i > 0 )
+        window.location = ( h.indexOf('&',i) > 0 ) ? h.substr(0,i)+h.substr(h.indexOf('&',i)+1) : h.substr(0,i-1);
+      return; // Rien à faire si pas d'ordre déjà réglé
+    }
+    if ( $(this).hasClass('icon-alphadesc') )   var o = 'alpha-inv';
+    if ( $(this).hasClass('icon-chronoasc') )   var o = 'chrono';
+    if ( $(this).hasClass('icon-chronodesc') )  var o = 'chrono-inv';
+    if ( i > 0 )
+      window.location = ( h.indexOf('&',i) > 0 ) ? h.substr(0,i+6)+o+h.substr(h.indexOf('&',i)) : h.substr(0,i+6)+o;
+    else
+      window.location = ( h.indexOf('?') > 0 ) ? h+'&ordre='+o : h+'?ordre='+o;
+  });
+});
+  </script>
+
+</section>
+
+<footer>Ce site est réalisé par le logiciel <a href="http://cahier-de-prepa.fr">Cahier de prépa</a>, publié sous <a href="Licence_CeCILL_V2-fr.html">licence libre</a>.&nbsp;<span class="icon-theme" title="Changer le thème lumineux/sombre"></span>&nbsp;<a class="icon-python" href="/basthon" title="Coder en Python directement dans votre navigateur"></a></footer>
+
+<div id="load"><img src="js/ajax-loader.gif"></div>
+<script type="text/javascript" src="js/lecture.min.js?v=1100"></script>
+
+</body>
+</html>
